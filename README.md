@@ -1,79 +1,57 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Netflix Clone App
 
-# Getting Started
+This is a React Native application that simulates the user interface and features of the Netflix app. The app allows users to browse trending movies, view Netflix Originals, watch movie trailers, and navigate between different sections of the app.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
+- Browse Trending Movies: View a list of trending movies fetched from the TMDB API.
+- Netflix Originals: Explore a collection of Netflix Originals TV shows.
+- Movie Trailers: Watch trailers of selected movies using the YouTube iframe player.
+- Navigation: Use the navigation bar to switch between different sections of the app.
+- Modal View: Display detailed information about a selected movie in a modal window.
+- Responsive Design: The app is designed to work on different screen sizes.
 
-## Step 1: Start the Metro Server
+## Installation
+1. Clone the repository: `git clone https://github.com/AnuAithal/netflix-clone-app.git`
+2. Navigate to the project directory: `cd netflix-clone-app`
+3. Install dependencies: `npm install` or `yarn install`
+4. Start the app: `npm start` or `yarn start`
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Make sure you have React Native and Expo CLI installed on your system before proceeding.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Technologies Used
+React Native
+React Navigation
+movie-trailer
+react-native-youtube-iframe
 
-```bash
-# using npm
-npm start
+## Usage
+1. **Login:**
+   - Open the app to access the login page.
+   - Enter the username and password.
+   - Tap "Login".
+   - Successfully logging in will take you to the home page; otherwise, an alert will appear.
 
-# OR using Yarn
-yarn start
-```
+2. **Home Page:**
+   - After logging in, you'll see the home page.
+   - The movie banner will automatically change at intervals.
+   - Press the play button on the banner to watch the trailer.
+   - To exit the trailer, tap the back button.
 
-## Step 2: Start your Application
+3. **Movie Categories:**
+   - Scroll through rows of movie cards categorized by genre.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+4. **Movies Page:**
+   - Tap "Movies" in the navbar to navigate to the movies page.
+   - A list of movies will be displayed.
+   - Scroll vertically to view more movies.
 
-### For Android
+5. **Movie Details:**
+   - Press any movie card in the Movies page to view its details.
+   - Tap the play button to watch the movie's trailer.
 
-```bash
-# using npm
-npm run android
+6. **Logout:**
+   - Press the icon in the top-left corner of the navbar to log out.
 
-# OR using Yarn
-yarn android
-```
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
